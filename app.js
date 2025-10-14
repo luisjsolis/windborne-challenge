@@ -49,7 +49,7 @@ class BalloonTracker {
 
     async fetchBalloonData(timeIndex) {
         try {
-            const response = await fetch(`https://a.windbornesystems.com/treasure/${timeIndex}.json`);
+            const proxyUrl = 'https://api.allorigins.win/raw?url='; const targetUrl = `https://a.windbornesystems.com/treasure/${timeIndex}.json`; const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
             }
