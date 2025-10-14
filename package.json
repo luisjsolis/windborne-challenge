@@ -1,0 +1,21 @@
+{
+  "name": "windborne-balloon-tracker",
+  "version": "1.0.0",
+  "description": "Interactive visualization of WindBorne Systems weather balloon constellation data",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "deploy": "./deploy.sh"
+  },
+  "keywords": [
+    "weather",
+    "balloons",
+    "visualization",
+    "windborne",
+    "atmospheric-data"
+  ],
+  "author": "WindBorne Challenge Applicant",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "career_application": {
+    "name": "Your Actual Name",
+    "email": "your.actual.email@example.com",
+    "role": "Junior Web Developer",
+    "notes": "I chose to combine WindBorne's balloon data with weather information because weather balloons are specifically designed to collect atmospheric data. This combination provides valuable insights into atmospheric dynamics, helps visualize how weather patterns affect balloon flight paths, and makes complex atmospheric data accessible and engaging for both experts and the general public. I'm good to work with because I focus on creating robust, user-friendly solutions that handle edge cases gracefully and communicate complex technical concepts clearly.",
+    "submission_url": "https://your-deployed-app-url.com",
+    "portfolio_url": "https://your-portfolio-url.com",
+    "resume_url": "https://your-resume-url.com"
+  }
+}
