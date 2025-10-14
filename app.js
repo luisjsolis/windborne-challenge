@@ -49,7 +49,11 @@ class BalloonTracker {
 
     async fetchBalloonData(timeIndex) {
         try {
-            const proxyUrl = 'https://api.allorigins.win/raw?url='; const targetUrl = `https://a.windbornesystems.com/treasure/${timeIndex}.json`; const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
+            // Use CORS proxy to bypass CORS restrictions
+            const proxyUrl = 'https://api.codetabs.com/v1/proxy?quest=';
+            const targetUrl = `https://a.windbornesystems.com/treasure/${timeIndex}.json`;
+            const response = await fetch(proxyUrl + encodeURIComponent(targetUrl) + '&_t=' + Date.now());
+            
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
             }
@@ -60,7 +64,6 @@ class BalloonTracker {
             return { timeIndex: parseInt(timeIndex), data: null, error: error.message };
         }
     }
-
     processBalloonData(results) {
         this.balloonData = [];
         
